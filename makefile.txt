@@ -1,0 +1,10 @@
+# Visu mērķu nosaukums, kas tiks izpildīti ar komandu 'make all'
+all: neighbor_service cli_program
+
+# Mērķis 'neighbor_service', kas tiek izveidots no 'neighbor_service.cpp'
+neighbor_service: neighbor_service.cpp
+    g++ -o neighbor_service neighbor_service.cpp
+
+# Mērķis 'cli_program', kas tiek izveidots no 'cli_program.cpp'
+cli_program: cli_program.cpp
+    g++ -o cli_program cli_program.cpp
